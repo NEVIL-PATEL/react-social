@@ -1,8 +1,8 @@
-import './login.css'
+import './register.css'
 
 import React from 'react'
 
-export default function Login() {
+export default function Register() {
   return (
     <div className='login'>
         <div className="loginWrapper">
@@ -12,11 +12,12 @@ export default function Login() {
             </div>
             <div className="loginRight">
                 <div className="loginBox">
+                    <input placeholder="Username" type="text" className="loginInput" />
                     <input placeholder="Email" type="email" className="loginInput" />
                     <input placeholder="password" type="password" className="loginInput" />
-                    <button className="loginButton" >Log In</button>
-                    <span className="loginForgot">Forgot Password?</span>
-                    <button className="loginRegisterButton">Create a New Account</button>
+                    <input placeholder="password Again" type="password" className="loginInput" />
+                    <button className="loginButton" >Sign Up</button>
+                    <button className="loginRegisterButton">Log into Account</button>
                 </div>
             </div>
         </div>
